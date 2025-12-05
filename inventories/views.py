@@ -20,10 +20,10 @@ class AuditLogViewSet(viewsets.ModelViewSet):
     @api_view(['POST'])
     @authentication_classes([TokenAuthentication])
     @permission_classes([IsAuthenticated])
-    def update_order(request, order_id):
+    def update_order(request, order_number):
         try:
-            order = order_id.objects.get(id=order_id)
-        except order_id.DoesNotExist:
+            order = order_number
+        except order_number.DoesNotExist:
             return Response({"error": "Pedido no encontrado"}, status=404)
 
         # guardar quién modifica
