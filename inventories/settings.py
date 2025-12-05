@@ -83,11 +83,11 @@ WSGI_APPLICATION = 'inventories.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('DB_NAME', 'databaseautologs'),
-        'USER': os.environ.get('DB_USER', 'proyecto_arqui'),
-        'PASSWORD': os.environ.get('DB_PASSWORD', 'arqui2025'),
-        'HOST': os.environ.get('DB_HOST', 'databaseautologs.czwcqsywe2ag.us-east-1.rds.amazonaws.com'),
-        'PORT': os.environ.get('DB_PORT', '3306'),
+        'NAME':  'databaseautologs',
+        'USER':  'proyecto_arqui',
+        'PASSWORD': 'arqui2025',
+        'HOST': 'databaseautologs.czwcqsywe2ag.us-east-1.rds.amazonaws.com',
+        'PORT': '3306',
     }
 }
 
