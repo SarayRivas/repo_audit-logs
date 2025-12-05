@@ -1,6 +1,6 @@
-from django.utils import timezone
+
 from rest_framework import viewsets
-from .models import Product, Warehouse, Shelve, Inventory, InventoryMovement, WarehouseCreation, OrderCreation, AuditLog 
+from .models import  AuditLog 
 from .serializers import AuditLogSerializer
 from django.views.decorators.http import require_http_methods
 from django.http import JsonResponse
